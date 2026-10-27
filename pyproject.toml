@@ -1,0 +1,29 @@
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai-toolkit-Anonymous"
+version = "0.1.0"
+description = "Python implementations of classic AI search algorithms using BFS."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "Anonymous" }
+]
+keywords = [
+    "artificial-intelligence",
+    "breadth-first-search",
+    "missionaries-and-cannibals",
+    "water-jug-problem",
+    "search-algorithms"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ai_toolkit"]
